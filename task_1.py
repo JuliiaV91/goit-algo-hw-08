@@ -11,11 +11,11 @@ def min_costs (cables):
         total = first + second
         cost += total
 
-        heapq.heappush (cables, cost)
+        heapq.heappush (cables, total)
 
     return cost
 
 
 
-cables = [10, 3, 25, 100]
+cables = [1, 2, 3, 4]
 print(f"Мінімальна вартість з'єднання кабелів: {min_costs(cables)}")
